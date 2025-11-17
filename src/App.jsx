@@ -1,9 +1,13 @@
 import "./App.css";
 import { ToastContainer } from "react-toastify";
+import Navbar from "./components/Navbar/Navbar";
+import Banner from "./components/Banner/Banner";
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <Navbar></Navbar>
+      <Banner></Banner>
+
       <ToastContainer />
     </>
   );
