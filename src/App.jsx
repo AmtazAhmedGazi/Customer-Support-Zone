@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import MainSection from "./components/MainSection/MainSection";
+import Footer from "./components/Footer/Footer";
 
 const fetchTickets = async () => {
   const res = await fetch("/tickets.json");
@@ -24,8 +25,8 @@ function App() {
   return (
     <>
       <div className="bg-[#d1c0c01f]">
-        <Navbar />
-        <Banner tasks={tasks} resolvedTask={resolvedTask} />
+        <Navbar></Navbar>
+        <Banner tasks={tasks} resolvedTask={resolvedTask}></Banner>
         <Suspense
           fallback={
             <div className="flex justify-center items-center h-[300px]">
@@ -40,9 +41,10 @@ function App() {
             setTasks={setTasks}
             resolvedTask={resolvedTask}
             setResolvedTask={setResolvedTask}
-          />
+          ></MainSection>
         </Suspense>
       </div>
+      <Footer></Footer>
       <ToastContainer />
     </>
   );

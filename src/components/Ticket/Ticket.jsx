@@ -6,13 +6,9 @@ const Ticket = ({ ticket, tasks, setTasks }) => {
   const [inProgress, setInProgress] = useState(false);
 
   const handleOpen = () => {
-    if (!inProgress) {
-      setInProgress(true);
-
-      if (!tasks.some((t) => t.id === ticket.id)) {
-        setTasks([...tasks, ticket]);
-      }
-    }
+    setInProgress(true);
+    const newTask = [...tasks, ticket];
+    setTasks(newTask);
     toast("Ticket: " + ticket.title + " Opened");
   };
 
@@ -21,6 +17,7 @@ const Ticket = ({ ticket, tasks, setTasks }) => {
       <div className="flex justify-between mb-2">
         <h2 className="font-semibold text-xl">{ticket.title}</h2>
         <button
+          disabled={inProgress}
           onClick={handleOpen}
           className={`px-3 py-1 rounded-3xl font-semibold flex items-center text-xl ${
             inProgress
@@ -39,14 +36,14 @@ const Ticket = ({ ticket, tasks, setTasks }) => {
       <p className="text-[#627382] mb-4">{ticket.description}</p>
       <div className="flex justify-between">
         <div className="flex gap-4">
-          <h3 className="text-[#627382]">#100{ticket.id}</h3>
+          <h3 className="text-[#627382]">#00{ticket.id}</h3>
           <h3
             className={
               ticket.priority === "Low"
-                ? "text-green-300"
+                ? "text-[#02A53B]"
                 : ticket.priority === "Medium"
-                ? "text-yellow-300"
-                : "text-red-500"
+                ? "text-[#FEBB0C]"
+                : "text-[#F83044]"
             }
           >
             {ticket.priority.toUpperCase()} PRIORITY
