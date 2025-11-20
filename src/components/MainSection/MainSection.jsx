@@ -1,6 +1,7 @@
 import React from "react";
 import Tickets from "../Tickets/Tickets";
 import Task from "../Task/Task";
+import ResolvedTask from "../ResolvedTask/ResolvedTask";
 
 const MainSection = ({
   tickets,
@@ -38,7 +39,6 @@ const MainSection = ({
                   setTasks={setTasks}
                   resolvedTask={resolvedTask}
                   setResolvedTask={setResolvedTask}
-                  tickets={tickets}
                   setTickets={setTickets}
                 />
               ))
@@ -55,13 +55,7 @@ const MainSection = ({
               <h2 className="text-[#627382]">No resolved tasks yet</h2>
             ) : (
               resolvedTask.map((task) => (
-                <div
-                  key={task.id}
-                  className="bg-green-100 p-4 mb-4 rounded shadow-sm"
-                >
-                  <h2 className="font-semibold text-xl">{task.title}</h2>
-                  <p className="text-[#627382]">✔ Completed</p>
-                </div>
+                <ResolvedTask task={task}></ResolvedTask>
               ))
             )}
           </div>

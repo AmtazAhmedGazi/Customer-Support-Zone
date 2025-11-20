@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import calanderImg from "../../assets/calander.jpg";
+import { toast } from "react-toastify";
 
 const Ticket = ({ ticket, tasks, setTasks }) => {
   const [inProgress, setInProgress] = useState(false);
@@ -12,6 +13,7 @@ const Ticket = ({ ticket, tasks, setTasks }) => {
         setTasks([...tasks, ticket]);
       }
     }
+    toast("Ticket: " + ticket.title + " Opened");
   };
 
   return (
