@@ -1,4 +1,4 @@
-import { Suspense, useState, useEffect } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import { ToastContainer } from "react-toastify";
 import Navbar from "./components/Navbar/Navbar";

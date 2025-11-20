@@ -6,7 +6,7 @@ const Tickets = ({ ticketsPromise, tickets, setTickets, tasks, setTasks }) => {
 
   useEffect(() => {
     setTickets(ticketData);
-  }, [ticketData]);
+  }, [ticketData, setTickets]);
 
   return (
     <div className="grid md:col-span-3 mb-20 mx-5 md:mx-0">
