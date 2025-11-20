@@ -8,10 +8,11 @@ const Task = ({
   resolvedTask,
   setResolvedTask,
   setTickets,
+  tickets,
 }) => {
   const handleResolve = (presentTask) => {
     setTasks(tasks.filter((t) => t.id !== presentTask.id));
-    setTickets((prev) => prev.filter((t) => t.id !== presentTask.id));
+    setTickets(tickets.filter((t) => t.id !== presentTask.id));
     setResolvedTask([...resolvedTask, presentTask]);
     toast(task.title + " Resolved");
   };

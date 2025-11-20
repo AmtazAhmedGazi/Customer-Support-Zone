@@ -29,7 +29,7 @@ function App() {
         <Banner tasks={tasks} resolvedTask={resolvedTask}></Banner>
         <Suspense
           fallback={
-            <div className="flex justify-center items-center h-[300px]">
+            <div className="flex justify-center items-center">
               <span className="loading loading-spinner loading-4xl"></span>
             </div>
           }

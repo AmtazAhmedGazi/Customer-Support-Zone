@@ -35,6 +35,7 @@ const MainSection = ({
                   resolvedTask={resolvedTask}
                   setResolvedTask={setResolvedTask}
                   setTickets={setTickets}
+                  tickets={tickets}
                 ></Task>
               ))
             )}
