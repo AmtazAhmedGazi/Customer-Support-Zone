@@ -18,7 +18,7 @@ const Task = ({
   };
 
   return (
-    <div className="bg-base-100 p-4 mb-4 shadow-sm rounded">
+    <div className="bg-base-100 p-4 mb-4 shadow-sm rounded w-97 md:w-full">
       <h2 className="font-semibold text-xl mb-4">{task.title}</h2>
       <button
         onClick={() => handleResolve(task)}

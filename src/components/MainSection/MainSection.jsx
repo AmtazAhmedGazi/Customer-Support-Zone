@@ -12,11 +12,11 @@ const MainSection = ({
   setResolvedTask,
 }) => {
   return (
-    <div className="max-w-[1440px] mx-auto grid grid-cols-4 gap-8">
+    <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 ">
       <Tickets tickets={tickets} tasks={tasks} setTasks={setTasks}></Tickets>
 
-      <div>
-        <div className="mb-10">
+      <div className="order-first md:order-last ml-5 md:ml-0">
+        <div className="mb-10 ">
           <h2 className="text-[#34485A] font-bold text-3xl mb-4">
             Task Status
           </h2>

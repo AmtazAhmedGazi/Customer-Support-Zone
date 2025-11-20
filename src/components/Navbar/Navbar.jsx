@@ -3,13 +3,13 @@ import plusImg from "../../assets/plus.png";
 
 const Navbar = () => {
   return (
-    <div className="max-w-[1600px] mx-auto navbar bg-base-100 shadow-sm px-20 mb-20 bg-base">
+    <div className="max-w-[1600px] mx-auto navbar bg-base-100 shadow-sm md:px-20 mb-5 md:mb-20 bg-base">
       <div className="navbar-start">
         <a className="text-xl font-bold">CS — Ticket System</a>
       </div>
 
       <div className="navbar-end flex gap-8">
-        <div className="flex gap-8">
+        <div className="gap-8 hidden lg:flex">
           <p>Home</p>
           <p>FAQ</p>
           <p>Changelog</p>
