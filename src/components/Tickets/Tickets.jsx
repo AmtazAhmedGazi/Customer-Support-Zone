@@ -17,7 +17,7 @@ const Tickets = ({ tickets, tasks, setTasks }) => {
               ticket={ticket}
               tasks={tasks}
               setTasks={setTasks}
-            />
+            ></Ticket>
           ))
         )}
       </div>
