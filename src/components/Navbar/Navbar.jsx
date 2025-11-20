@@ -3,7 +3,7 @@ import plusImg from "../../assets/plus.png";
 
 const Navbar = () => {
   return (
-    <div className="max-w-[1600px] mx-auto navbar bg-base-100 shadow-sm px-20 mb-20">
+    <div className="max-w-[1600px] mx-auto navbar bg-base-100 shadow-sm px-20 mb-20 bg-base">
       <div className="navbar-start">
         <a className="text-xl font-bold">CS — Ticket System</a>
       </div>

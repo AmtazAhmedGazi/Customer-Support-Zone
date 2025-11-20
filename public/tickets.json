@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login issue",
+    "description": "Customer cannot log in with correct credentials",
+    "customer": "Alice Johnson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "01/15/2024"
+  },
+  {
+    "id": 2,
+    "title": "Payment failed",
+    "description": "Transaction failed while checking out",
+    "customer": "Bob Smith",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "01/16/2024"
+  },
+  {
+    "id": 3,
+    "title": "Bug in dashboard",
+    "description": "Graph does not load for some users",
+    "customer": "Charlie Brown",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "01/17/2024"
+  },
+  {
+    "id": 4,
+    "title": "Feature request",
+    "description": "Add dark mode to the application",
+    "customer": "Diana Prince",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "01/18/2024"
+  },
+  {
+    "id": 5,
+    "title": "App crash",
+    "description": "App crashes on iOS 16.2",
+    "customer": "Ethan Hunt",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "01/19/2024"
+  },
+  {
+    "id": 6,
+    "title": "Email notifications not received",
+    "description": "Customer is not receiving any email alerts",
+    "customer": "Fiona Gallagher",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "01/20/2024"
+  },
+  {
+    "id": 7,
+    "title": "Password reset issue",
+    "description": "Reset link expired immediately",
+    "customer": "George Lucas",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "01/21/2024"
+  },
+  {
+    "id": 8,
+    "title": "Slow loading",
+    "description": "Dashboard takes more than 10 seconds to load",
+    "customer": "Hannah Baker",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "01/22/2024"
+  },
+  {
+    "id": 9,
+    "title": "Data sync problem",
+    "description": "Data from mobile app not syncing with server",
+    "customer": "Ian Malcolm",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "01/23/2024"
+  },
+  {
+    "id": 10,
+    "title": "UI glitch",
+    "description": "Buttons overlapping on smaller screens",
+    "customer": "Jessica Jones",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "01/24/2024"
+  },
+  {
+    "id": 11,
+    "title": "Search not working",
+    "description": "Search results do not display correctly",
+    "customer": "Kevin Hart",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "01/25/2024"
+  },
+  {
+    "id": 12,
+    "title": "Incorrect billing",
+    "description": "Customer charged twice for the same order",
+    "customer": "Laura Palmer",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "01/26/2024"
+  },
+  {
+    "id": 13,
+    "title": "Notifications delayed",
+    "description": "Push notifications arrive late",
+    "customer": "Mark Ruffalo",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "01/27/2024"
+  },
+  {
+    "id": 14,
+    "title": "App freezing",
+    "description": "App freezes on Android devices after 10 mins",
+    "customer": "Nina Dobrev",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "01/28/2024"
+  },
+  {
+    "id": 15,
+    "title": "Profile picture upload fails",
+    "description": "Unable to upload profile pictures larger than 2MB",
+    "customer": "Oscar Isaac",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "01/29/2024"
+  }
+]
