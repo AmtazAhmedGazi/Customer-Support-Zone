@@ -38,6 +38,8 @@ const MainSection = ({
                   setTasks={setTasks}
                   resolvedTask={resolvedTask}
                   setResolvedTask={setResolvedTask}
+                  tickets={tickets}
+                  setTickets={setTickets}
                 />
               ))
             )}

@@ -1,8 +1,16 @@
 import React from "react";
 
-const Task = ({ task, tasks, setTasks, resolvedTask, setResolvedTask }) => {
+const Task = ({
+  task,
+  tasks,
+  setTasks,
+  resolvedTask,
+  setResolvedTask,
+  setTickets,
+}) => {
   const handleResolve = (presentTask) => {
     setTasks(tasks.filter((t) => t.id !== presentTask.id));
+    setTickets((prev) => prev.filter((t) => t.id !== presentTask.id));
     setResolvedTask([...resolvedTask, presentTask]);
   };
 

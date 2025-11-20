@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import calanderImg from "../../assets/calander.jpg";
 
-const Ticket = ({ ticket, tickets, setTickets, tasks, setTasks }) => {
+const Ticket = ({ ticket, tasks, setTasks }) => {
+  const [inProgress, setInProgress] = useState(false);
+
   const handleOpen = () => {
-    setTasks([...tasks, ticket]);
-    setTickets(tickets.filter((t) => t.id !== ticket.id));
+    if (!inProgress) {
+      setInProgress(true);
+
+      if (!tasks.some((t) => t.id === ticket.id)) {
+        setTasks([...tasks, ticket]);
+      }
+    }
   };
 
   return (
@@ -13,10 +20,18 @@ const Ticket = ({ ticket, tickets, setTickets, tasks, setTasks }) => {
         <h2 className="font-semibold text-xl">{ticket.title}</h2>
         <button
           onClick={handleOpen}
-          className="px-3 py-1 rounded-3xl font-semibold flex items-center text-xl bg-[#B9F8CF] text-[#0B5E06]"
+          className={`px-3 py-1 rounded-3xl font-semibold flex items-center text-xl ${
+            inProgress
+              ? "bg-[#F8F3B9] text-[#9C7700]"
+              : "bg-[#B9F8CF] text-[#0B5E06]"
+          }`}
         >
-          <div className="p-3 rounded-4xl h-3 w-3 mr-1.5 bg-[#02A53B]"></div>
-          Open
+          <div
+            className={`p-3 rounded-4xl h-3 w-3 mr-1.5 ${
+              inProgress ? "bg-[#FEBB0C]" : "bg-[#02A53B]"
+            }`}
+          ></div>
+          {inProgress ? "In-Progress" : "Open"}
         </button>
       </div>
       <p className="text-[#627382] mb-4">{ticket.description}</p>
