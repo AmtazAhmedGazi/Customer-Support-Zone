@@ -1,7 +1,7 @@
 import React from "react";
 import Ticket from "../Ticket/Ticket";
 
-const Tickets = ({ tickets, setTickets, tasks, setTasks }) => {
+const Tickets = ({ tickets, tasks, setTasks }) => {
   return (
     <div className="grid col-span-3 mb-20">
       <h2 className="text-[#34485A] font-bold text-3xl mb-4">
@@ -15,8 +15,6 @@ const Tickets = ({ tickets, setTickets, tasks, setTasks }) => {
             <Ticket
               key={ticket.id}
               ticket={ticket}
-              tickets={tickets}
-              setTickets={setTickets}
               tasks={tasks}
               setTasks={setTasks}
             />

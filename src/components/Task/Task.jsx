@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Task = ({
   task,
@@ -12,6 +13,7 @@ const Task = ({
     setTasks(tasks.filter((t) => t.id !== presentTask.id));
     setTickets((prev) => prev.filter((t) => t.id !== presentTask.id));
     setResolvedTask([...resolvedTask, presentTask]);
+    toast(task.title + " Resolved");
   };
 
   return (

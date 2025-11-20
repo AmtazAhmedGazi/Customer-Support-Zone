@@ -13,12 +13,7 @@ const MainSection = ({
 }) => {
   return (
     <div className="max-w-[1440px] mx-auto grid grid-cols-4 gap-8">
-      <Tickets
-        tickets={tickets}
-        setTickets={setTickets}
-        tasks={tasks}
-        setTasks={setTasks}
-      />
+      <Tickets tickets={tickets} tasks={tasks} setTasks={setTasks} />
 
       <div>
         <div className="mb-10">
