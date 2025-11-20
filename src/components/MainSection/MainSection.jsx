@@ -10,10 +10,17 @@ const MainSection = ({
   setTasks,
   resolvedTask,
   setResolvedTask,
+  ticketsPromise,
 }) => {
   return (
     <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 ">
-      <Tickets tickets={tickets} tasks={tasks} setTasks={setTasks}></Tickets>
+      <Tickets
+        tasks={tasks}
+        setTasks={setTasks}
+        ticketsPromise={ticketsPromise}
+        setTickets={setTickets}
+        tickets={tickets}
+      ></Tickets>
 
       <div className="order-first md:order-last ml-5 md:ml-0">
         <div className="mb-10 ">
@@ -51,7 +58,7 @@ const MainSection = ({
               <h2 className="text-[#627382]">No resolved tasks yet</h2>
             ) : (
               resolvedTask.map((task) => (
-                <ResolvedTask task={task}></ResolvedTask>
+                <ResolvedTask task={task} key={task.id}></ResolvedTask>
               ))
             )}
           </div>

@@ -18,10 +18,6 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [resolvedTask, setResolvedTask] = useState([]);
 
-  useEffect(() => {
-    ticketsPromise.then((data) => setTickets(data));
-  }, []);
-
   return (
     <>
       <div className="bg-[#d1c0c01f]">
@@ -41,6 +37,7 @@ function App() {
             setTasks={setTasks}
             resolvedTask={resolvedTask}
             setResolvedTask={setResolvedTask}
+            ticketsPromise={ticketsPromise}
           ></MainSection>
         </Suspense>
       </div>

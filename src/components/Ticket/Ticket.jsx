@@ -13,7 +13,7 @@ const Ticket = ({ ticket, tasks, setTasks }) => {
   };
 
   return (
-    <div className="max-w-[513px] p-4 shadow-sm rounded bg-base-100 mb-4">
+    <div className="max-w-[513px] max-h-[150px] p-4 shadow-sm rounded bg-base-100 mb-4">
       <div className="flex justify-between mb-2">
         <h2 className="font-semibold md:text-xl">{ticket.title}</h2>
         <button
